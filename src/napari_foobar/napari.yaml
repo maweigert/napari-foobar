@@ -1,0 +1,11 @@
+name: napari-foobar
+display_name: napari FooBar
+contributions:
+  commands:
+    - id: napari-foobar.get_reader
+      python_name: napari_foobar._reader:napari_get_reader
+      title: Open data with napari FooBar  
+  readers:
+    - command: napari-foobar.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy']  
